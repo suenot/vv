@@ -5,13 +5,16 @@ $(document).ready(function(){
 	var htmlWidth = $('html').width();
 	var virtualViewportWidthPhone = 640;
 	var virtualViewportWidthDesktop = 1280;
-	var virtualViewportWidthMax = 3000;
+	var virtualViewportWidthMax = 1400;
 	// for desktops: virtual viewport
 	if ($.browser.desktop) {
 		var scaleScreen = function(){
 			$('html').css('zoom', '1');
 			htmlWidth = $('html').width();
-			if ((htmlWidth > virtualViewportWidthPhone) && !$.browser.msie) {
+			if ((htmlWidth > virtualViewportWidthMax) && !$.browser.msie) {
+				var zoom = htmlWidth/virtualViewportWidthMax;
+				$('html').css('zoom', zoom);
+			} else if ((htmlWidth > virtualViewportWidthPhone) && !$.browser.msie) {
 				var zoom = htmlWidth/virtualViewportWidthDesktop;
 				$('html').css('zoom', zoom);
 			} else if ((htmlWidth <= virtualViewportWidthPhone) && !$.browser.msie) {
@@ -26,7 +29,7 @@ $(document).ready(function(){
 			resizeTimer = setTimeout(scaleScreen, 100);
 		});
 	};
-	// for phones and tables: native viewport
+	// for phones and tablets: native viewport
 	if ($.browser.mobile) {
 		$('html').css('min-width', '100vw');
 		// for phones
