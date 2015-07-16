@@ -1,0 +1,45 @@
+.title {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.title .heading {
+  -webkit-box-flex: 1;
+  -webkit-flex: 1 0 auto;
+      -ms-flex: 1 0 auto;
+          flex: 1 0 auto;
+}
+svg {
+  height: 500px;
+  margin: 0 auto;
+  display: block;
+}
+@media (min-width: 320px) {
+  svg {
+    fill: #ff0;
+  }
+}
+@media (min-width: 641px) {
+  svg {
+    fill: #00f;
+  }
+}
+@media (min-width: 1025px) {
+  svg {
+    fill: #008000;
+  }
+}
+@media (min-width: $screen-ls-min) {
+  svg {
+    fill: #f00;
+  }
+}

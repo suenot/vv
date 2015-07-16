@@ -1,0 +1,27 @@
+// zurb foundation vars
+$screen-xs-min = 320px
+$screen-xs-max = 640px
+$screen-sm-min = 641px
+$screen-sm-max = 1024px
+$screen-md-min = 1025px
+$screen-md-max = 1440px
+$screen-lg-min = 1441px
+$screen-lg-max = 1921px
+.title
+	display: flex
+	justify-content: space-between
+	align-items: center
+	.heading
+		flex: 1 0 auto
+svg
+	height: 500px
+	margin: 0 auto
+	display: block
+	@media(min-width: $screen-xs-min)
+		fill: yellow
+	@media(min-width: $screen-sm-min)
+		fill: blue
+	@media(min-width: $screen-md-min)
+		fill: green
+	@media(min-width: $screen-ls-min)
+		fill: red

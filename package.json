@@ -1,0 +1,22 @@
+{
+  "name": "virtual-viewport",
+  "version": "2.0.0",
+  "description": "emulate viewport for pc",
+  "main": "gulpfile.coffee",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "suenot",
+  "license": "MIT",
+  "devDependencies": {
+    "browser-sync": "^2.4.0",
+    "coffee-script": "^1.9.3",
+    "gulp": "^3.8.11",
+    "gulp-autoprefixer": "^2.2.0",
+    "gulp-concat": "^2.5.2",
+    "gulp-jade": "^1.0.0",
+    "gulp-livereload": "^3.8.0",
+    "gulp-load-plugins": "^1.0.0-rc.1",
+    "gulp-stylus": "^2.0.1"
+  }
+}
