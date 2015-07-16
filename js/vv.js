@@ -1,4 +1,4 @@
-// https://github.com/suenot/virtual-viewport
+// https://github.com/suenot/vv
 
 'use strict';
 var vv = function(from, base, to){

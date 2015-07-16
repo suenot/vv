@@ -1,5 +1,5 @@
 {
-  "name": "virtual-viewport",
+  "name": "vv",
   "version": "2.0.0",
   "description": "emulate viewport for pc",
   "main": "gulpfile.coffee",
